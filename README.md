@@ -26,4 +26,7 @@ List of cool academic papers I've read with summaries
   * Efficiently find fraction of referring expressions for scenes that are used; estimate associated likelihoods
   * Learn probability distribution over set of logical expressions that select a target set of objects in a world state
   * Model as globally normalized log-linear model using features of logical form *z*
-  * 
+  * Distinction for plural entities in generated logical forms
+  * globally optimized log-linear model, conditioned on state S and set of target objects G
+  * Three kinds of features: logical expression structure features, situated features, and a complexity feature
+  * learning two models--one for a global logical form for world-state model; and one learning a series of classifiers for each 
