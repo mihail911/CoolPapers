@@ -30,3 +30,10 @@ List of cool academic papers I've read with summaries
   * globally optimized log-linear model, conditioned on state S and set of target objects G
   * Three kinds of features: logical expression structure features, situated features, and a complexity feature
   * learning two models--one for a global logical form for world-state model; and one learning a series of classifiers for each 
+  * learn codebooks and associated sparse codes
+
+#[A Game-Theoretic Approach to Generating Spatial Descriptions] ()
+  * Generate spatial references to objects where listener much accurately identify object described by the speaker
+  * Given target, speaker generates utterance according to a distribution, listener generates guess according to another distribution and both agents get a utility of 1 iff the guess matches the target
+  * Train log-linear model for speaker and listener respectively
+  * 
