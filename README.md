@@ -56,3 +56,10 @@ List of cool academic papers I've read with summaries
 * *Future Work*
   More work needs to be done in establishing proper projectivity signatures for a broader range of quantifiers, verbal constructs, implicatives and factives, logical connections, and other semantic functions. 
 
+#[The PASCAL Recognising Textual Entailment Challenge] (http://download-v2.springer.com/static/pdf/580/bok%253A978-3-540-33428-6.pdf?token2=exp=1430025100~acl=%2Fstatic%2Fpdf%2F580%2Fbok%25253A978-3-540-33428-6.pdf*~hmac=c050ffd46337c67706a3e17accb3fb348d1a14980319bbddf584b8d93f82f0f7)
+* *General Problem*
+  * Paper proposes an abstract generic task to frame the textual entailment problem. 
+* *Summary*
+  * Generated a dataset of text snippets from general news domain, annotated by humans with entailment properties. Annotators generated hypotheses for certain text corpora by converting questions and text phrases across various domains including QA, information extraction, reading comprehension, machine translation, and paraphrase acquisition. Sixteen submissions made to the challenge encompassing a wide variety of entailment inference systems. Basic kinds of features for the system include stemming, lemmatization, POS tagging, and some sort of statistical weighting. Other features included making use of higher-level lexical relationships via Wordnet or evaluating distance between syntactic structures of hypothesis and premise.
+* *Future Work*
+  * Wished to improve the challenge by dealing with multi-valued annotation, relaxing assumptions on assumed background knowledge, providing entailment subtasks, and offering a wider variety of inference scope.
