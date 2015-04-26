@@ -63,3 +63,11 @@ List of cool academic papers I've read with summaries
   * Generated a dataset of text snippets from general news domain, annotated by humans with entailment properties. Annotators generated hypotheses for certain text corpora by converting questions and text phrases across various domains including QA, information extraction, reading comprehension, machine translation, and paraphrase acquisition. Sixteen submissions made to the challenge encompassing a wide variety of entailment inference systems. Basic kinds of features for the system include stemming, lemmatization, POS tagging, and some sort of statistical weighting. Other features included making use of higher-level lexical relationships via Wordnet or evaluating distance between syntactic structures of hypothesis and premise.
 * *Future Work*
   * Wished to improve the challenge by dealing with multi-valued annotation, relaxing assumptions on assumed background knowledge, providing entailment subtasks, and offering a wider variety of inference scope.
+  
+#[NaturalLI: Natural Logic Inference for Common Sense Reasoning] (http://nlp.stanford.edu/pubs/angeli2014-emnlp-naturalli.pdf)
+* *General Task*
+  * Seeks to tackle database completion using Maccartney's natural logic. Approach does not require explicit alignment between premise and query and allows imprecise inferences at an associated cost learned from data. Casts transformation from query to supporting premise as a unified search problem where each step may have associated with it a cost reflecting confidence in the step. System allows for unstructured text as input to database, without a need to specify a schema or domain of text.
+  
+* *Summary*
+
+* *Future Work*
