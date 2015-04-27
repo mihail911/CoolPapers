@@ -69,5 +69,6 @@ List of cool academic papers I've read with summaries
   * Seeks to tackle database completion using Maccartney's natural logic. Approach does not require explicit alignment between premise and query and allows imprecise inferences at an associated cost learned from data. Casts transformation from query to supporting premise as a unified search problem where each step may have associated with it a cost reflecting confidence in the step. System allows for unstructured text as input to database, without a need to specify a schema or domain of text.
   
 * *Summary*
+  * Represent Maccartney's inference model as a finite state machine that can be collapsed into three states.
 
 * *Future Work*
