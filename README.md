@@ -69,6 +69,7 @@ List of cool academic papers I've read with summaries
   * Seeks to tackle database completion using Maccartney's natural logic. Approach does not require explicit alignment between premise and query and allows imprecise inferences at an associated cost learned from data. Casts transformation from query to supporting premise as a unified search problem where each step may have associated with it a cost reflecting confidence in the step. System allows for unstructured text as input to database, without a need to specify a schema or domain of text.
   
 * *Summary*
-  * Represent Maccartney's inference model as a finite state machine that can be collapsed into three states.
+  * Represent Maccartney's inference model as a finite state machine that can be collapsed into three states. Represent acquisition of new premises in knowledge base as search over FSA, with nodes representing candidate facts and edges as mutations of these facts with associated costs.  The confidence is a path is then computed using the cost vector and associated feature vector (representing the distance between the endpoints of two transitions). Model was tested on FraCaS entailment corpus as well as a corpus of OpenIE extractions.
 
 * *Future Work*
+  * Search process does not have full access to the parse tree so struggles with issues of alignment. 
