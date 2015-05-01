@@ -73,3 +73,21 @@ List of cool academic papers I've read with summaries
 
 * *Future Work*
   * Search process does not have full access to the parse tree so struggles with issues of alignment. 
+  
+#[Learning Dependency-Based Compositional Semantics] (http://cs.stanford.edu/~pliang/papers/dcs-acl2011.pdf)
+* Supervised semantic parsers
+* First must map questiosn into logical forms and this requires data with manually labeled semantic forms
+* all we really care about is resulting denotation for a given input, so are free to choose how we represent logical forms
+* introduce new semantic representation: dependency-based compositional semantics
+* represent logical forms as DCS trees where nodes represent predicates (State, Country, Genus, ...) and edges represent relations 
+* such a form allows for a transparency between syntactics and semantics and hence a streamlined framework for program induction
+* denotation at root node
+* trees mirror syntactic dependency structure, facilitating parsing but also enable efficient computation of denotations defined on a given tree
+* to handle divergence between syntactic and semantic scope in some more complicated expressions, mark nodes low in tree with *mark* relation (E, Q, or C) and then invoke it higher up with *execute* relation to create desired semantic scope
+* discriminative semantic parsing model placing a log-linear distribution over the set of permissible DCS trees given an utterance
+
+#[Bringing Machine Learning and Compositional Semantics Together] (http://www.annualreviews.org/doi/pdf/10.1146/annurev-linguist-030514-125312)
+* logical approaches rely on techniques from proof theory and model-theoretic semantics; primarily concerned with inference, ambiguity, vagueness, and compositional interpretation
+* statistical approaches derive their tools from algorithms and optimization and tend to focus on word meanings, vector space models, and other broad notions of semantic content
+* principle of compositionality: meaning of complex syntactic phrase is function of meanings of its constituent phrases
+* 
