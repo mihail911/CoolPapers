@@ -90,4 +90,19 @@ List of cool academic papers I've read with summaries
 * logical approaches rely on techniques from proof theory and model-theoretic semantics; primarily concerned with inference, ambiguity, vagueness, and compositional interpretation
 * statistical approaches derive their tools from algorithms and optimization and tend to focus on word meanings, vector space models, and other broad notions of semantic content
 * principle of compositionality: meaning of complex syntactic phrase is function of meanings of its constituent phrases
-* 
+* heart of grammar is its lexicon
+* generate a grammar exponential in the length of the sentence; dynamic programming can mitigate problems for parsing
+* learning via denotations in general results in increased computational complexity
+* learning from denotations offers advantage of being able to define features on denotations
+* semantic representations can also be distributed representations (rather than logical forms)
+
+#[Semantic Parsing on Freebase from Question-Answer Pairs] (http://cs.stanford.edu/~pliang/papers/freebase-emnlp2013.pdf)
+* traditional semantic parsers get around need for annotated logical forms by increasing number of logical predicates
+* semantic parser must combine predicates into coherent logical form
+* parser define few simple composition rules which over-generate and use model features to simulate soft rules and categories
+* use POS tag features and features on denotations of predicted logical forms
+* database is queried using logical language: lambda-dependency-based compositional semantics
+* given utterance, semantic parser constructs a distribution over possible derivations, each derivation specifying application of a set of rules that culminates in the logical form at root of tree
+* derivations constructed recursively by mapping natural language phrases to knowledge base predicates and small set of composition rules
+* to produce manageable set of predicates per utterance, construct a lexicon that maps natural language phrases to logical predicates by aligning large text corpus to Freebase; also generate logical predicates compatible with neighboring predicates using bridging operation
+
